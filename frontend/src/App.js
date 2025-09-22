@@ -21,7 +21,7 @@ function App() {
 
   const testConnection = async () => {
     try {
-      const API_BASE = "https://study-plannerback.onrender.com";
+      const API_BASE = "http://localhost:5000";
       
       // Try multiple endpoints to test connection
       const endpoints = ['/health', '/', '/test'];
@@ -58,7 +58,7 @@ function App() {
     setLoading(true);
 
     try {
-      const API_BASE = "https://study-plannerback.onrender.com";
+      const API_BASE = "http://localhost:5000";
       
       console.log("Making request to:", `${API_BASE}/generate_plan`);
 
